@@ -1,0 +1,9 @@
+* Both files are intended for web developers (line numbers made visible, nXhtml activated etc.). 
+
+* I decided to use a dark theme in both Emacs and Vim. 
+
+* You will need to download certain plugins to have these configuration files working (e.g. theme manager, nXhtml etc., just check any error message you receive when opening Emacs and GVim). 
+
+* Both files are intended to be used in Linux but I tested them in Windows as well (if you have Windows you just need to comment the Linux-specific lines and uncomment the Windows-specific ones). 
+
+* Please check the comments in the configuration files to see what each line does.
