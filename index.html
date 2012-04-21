@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Emacs-and-gvim-for-netbook</title>
+  <meta name="description" content="Useful Emacs and gVim configuration files">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Emacs-and-gvim-for-netbook</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Useful Emacs and gVim configuration files</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/mastazi/Emacs-and-gVim-for-netbook/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/mastazi/Emacs-and-gVim-for-netbook/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/mastazi/Emacs-and-gVim-for-netbook" class="code">fork Emacs-and-gvim-for-netbook on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>Conf files for Emacs and gVim on netbooks</h1>
+
+<h2>Dark theme, small windows, streamlined UI, integration with system clipboard and more.</h2>
+
+<p>`;;Small window for netbook:
+(if (window-system)
+  (set-frame-height (selected-frame) 28))</p>
+
+<p>;;Disable toolbar to save screen real estate:
+(tool-bar-mode -1)`</p>
+
+<p><code>"small initial window for netbook:
+set lines=28 columns=100
+"remove toolbar to save screen space:
+set guioptions-=T</code></p>
+
+<ul>
+<li>Both files are intended for web developers (line numbers made visible, nXhtml activated etc.). </li>
+<li>I decided to use a dark theme in both Emacs and Vim. </li>
+<li>You will need to download certain plugins to have these configuration files working (e.g. theme manager, nXhtml etc., just check any error message you receive when opening Emacs and GVim).</li>
+<li>Both files are intended to be used in Linux but I tested them in Windows as well (if you have Windows you just need to comment the Linux-specific lines and uncomment the Windows-specific ones). </li>
+<li>Please check the comments in the configuration files to see what each line does.</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/mastazi" class="avatar"><img src="https://secure.gravatar.com/avatar/a7ccda449cda876200755fd99d944562?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/mastazi">mastazi</a> maintains <a href="https://github.com/mastazi/Emacs-and-gVim-for-netbook">Emacs-and-gvim-for-netbook</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/mastazi/Emacs-and-gVim-for-netbook/tarball/master" class="tar">tar</a><a href="https://github.com/mastazi/Emacs-and-gVim-for-netbook/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-16041741-16");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
