@@ -8,3 +8,7 @@ set number
 set encoding=utf-8
 "use Monokai theme, find it at github.com/sickill/vim-monokai:
 colorscheme Monokai
+"use Windows clipboard with no need to use the * or + registers
+"set clipboard=unnamed
+"use X11 clipboard on Linux with no need to use the + register
+set clipboard=unnamedplus
