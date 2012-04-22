@@ -582,3 +582,8 @@ code {font-family: Courier, monospace;}
 .comm {color: yellow;}
 .val {color: coral;}
 .oper {color: lime;}
+.light {
+  color: #dedede;
+  font-size: 18px;
+  font-weight: bold;
+}
