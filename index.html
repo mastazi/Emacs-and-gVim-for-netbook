@@ -40,16 +40,16 @@
 
 <h2>Dark theme, small windows, streamlined UI, integration with system clipboard and more.</h2>
 
-<div><pre>;;Small window for netbook:
-(if (window-system)
-  (set-frame-height (selected-frame) 28))
-;;Disable toolbar to save screen real estate:
-(tool-bar-mode -1)</pre></div>
+<div><pre><code><span class="comm">;;Small window for netbook:</span>
+(<span class="oper">if</span> (window-system)
+  (set-frame-height (selected-frame) <span class="val">28</span>))
+<span class="comm">;;Disable toolbar to save screen real estate:</span>
+(tool-bar-mode <span class="val">-1</span>)</code></pre></div>
 
-<div><pre>"small initial window for netbook:
-set lines=28 columns=100
-"remove toolbar to save screen space:
-set guioptions-=T</pre></div>
+<div><pre><code><span class="comm">"small initial window for netbook:</span>
+<span class="oper">set</span> lines=<span class="val">28</span> columns=<span class="val">100</span>
+<span class="comm">"remove toolbar to save screen space:</span>
+<span class="oper">set</span> guioptions-=<span class="val">T</span></code></pre></div>
 
 <ul>
 <li>Both files are intended for web developers (line numbers made visible, nXhtml activated etc.). </li>
