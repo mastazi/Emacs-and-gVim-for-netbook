@@ -45,6 +45,17 @@
 ;;Save text to Linux clipboard
 (setq x-select-enable-clipboard t)
 
+;; the following code avoids an alert about obsolete function on emacs 23.3:
+  (when (and (equal emacs-major-version 23)
+             (equal emacs-minor-version 3))
+    (eval-after-load "bytecomp"
+      '(add-to-list 'byte-compile-not-obsolete-vars
+                    'font-lock-beginning-of-syntax-function))
+  ;; additional code required because tramp-compat.el clobbers this variable:
+    (eval-after-load "tramp-compat"
+      '(add-to-list 'byte-compile-not-obsolete-vars
+                    'font-lock-beginning-of-syntax-function)))
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
