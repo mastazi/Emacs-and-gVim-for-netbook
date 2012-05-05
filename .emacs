@@ -1,6 +1,8 @@
 ;;Small window for netbook:
+;;If you get the following error: "symbol's function definition is void: window-system", then comment lines 3 and 5.
 (if (window-system)
-  (set-frame-height (selected-frame) 28))
+  (set-frame-height (selected-frame) 28)
+  )
 
 ;;Disable toolbar to save screen real estate:
 (tool-bar-mode -1)
