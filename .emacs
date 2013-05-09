@@ -17,7 +17,7 @@
 ;;(load "C:/Program Files/emacs-23.3/nxhtml/autostart.el")
 
 ;;but without nXhtml's multimode background coloring:
-(setq mumamo-background-colors nil)
+(setq mumamo-no-chunk-coloring)
 
 ;;color theme:
 (defun color-theme-face-attr-construct (face frame)
