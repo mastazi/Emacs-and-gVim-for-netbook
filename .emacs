@@ -31,8 +31,9 @@
      (color-theme-initialize)
      ;;the following line is not needed if using one of the default themes
      (load-file "~/.emacs.d/color-theme-almost-monokai.el")
-     (color-theme-almost-monokai)
-
+     ;;If in GUI mode we use Monokai, else, i.e. in terminal,  we use dark laptop.
+     (if window-system (color-theme-almost-monokai)
+                       (color-theme-dark-laptop))
 ;; set up UTF-8 coding, important when editing Web files
 (prefer-coding-system       'utf-8)
 (set-default-coding-systems 'utf-8)
